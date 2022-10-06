@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style uas.css">
+    <title>Untirta </title>
+    
+
+    
+    <!--<title>Welcome to Math Class</title>--> 
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+            
+            
+            <i class='bx bx-chevron-right-alt icon toggle '><img src="chevron-right-solid-24.png " alt=""></i>
+                <span class="image">
+                    <img src="profil.jpg " alt="">
+            
+                    <!--<img src="chevron-left-regular-24.png" alt="">-->
+                </span>
+
+                <div class="text logo-text">
+
+                    <span class="name">Untirta</span>
+                    <span class="profession">Banten</span>
+                </div>
+            </div>
+            
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <img src="search-regular-24.png " alt="">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                         <a href="home.html">
+                        <img src="home-solid-24.png " alt="">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
+
+                    
+                        <li class="nav-link">
+                        <a href="about.html">
+                        <img src="notepad-solid-24.png " alt="">
+                            <i class='bx bxs-notepad-alt icon'></i>
+                            <span class="text nav-text">About</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="blog.html">
+
+                            <span class="text nav-text">Blog</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="faperta.html">
+
+                            <span class="text nav-text">FAPERTA</span>
+                        </a>
+                    </li>
+
+
+
+                    <li class="nav-link">
+                        <a href="feb.html">
+
+                            <span class="text nav-text">FEB</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="fh.html">
+
+                            <span class="text nav-text">FH</span>
+                        </a>
+                    </li>
+
+                        
+
+                    <li class="nav-link">
+                        <a href="fisip.html">
+
+                            <span class="text nav-text">FISIP</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="fk.html">
+
+                            <span class="text nav-text">FK</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="fkip.html">
+
+                            <span class="text nav-text">FKIP</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="ft.html">
+
+                            <span class="text nav-text">FT</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="pascasarjana.html">
+
+                            <span class="text nav-text">PASCASARJANA</span>
+                        </a>
+                    </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Ganti mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+    
+            
+            
+    <section class="home">
+        <div class="text">Welcome to Jawara University</div>
+        <div class="img"><img src="Statistika 2.png " alt="">
+        </div></section>
+    
+   <div class="text"><h1>Materi dan Sub-Materi</h1>
+    <p>Berikut ini materi dan sub-materi yang  akan dibahas</p></div>
+    
+
+    <div class="nav-text">
+        <div class="course-col">
+            <h3>BAB I <br>PENDAHULUAN</h3>
+            <p>Apa itu sampel,data dan populasi</p>
+        </div>
+
+        <div class="course-col">
+            <h3>BAB II <br>PENYAJIAN DATA</h3>
+            <p>Penyajian Data berbentuk tabel dan beberapa macam diagram</p>
+        </div>
+
+        <div class="course-col">
+            <h3>BAB III <br>PENGOLAHAN DATA</h3>
+            <p>Mengenal median,mean,modus dan sejenisnya</p>
+        </div>
+    </div>
+
+    </section>
+        
+    
+    <script>
+        const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      searchBtn = body.querySelector(".search-box"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
+
+
+toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+searchBtn.addEventListener("click" , () =>{
+    sidebar.classList.remove("close");
+})
+
+modeSwitch.addEventListener("click" , () =>{
+    body.classList.toggle("dark");
+    
+    if(body.classList.contains("dark")){
+        modeText.innerText = "Ganti mode";
+    }else{
+        modeText.innerText = "Ganti mode";
+        
+    }
+});
+    </script>
+
+</body>
+</html>
